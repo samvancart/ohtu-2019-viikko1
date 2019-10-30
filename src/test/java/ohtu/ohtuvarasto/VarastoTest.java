@@ -117,12 +117,15 @@ public class VarastoTest {
     }
 
     @Test
-    public void varastonTilavuusEiVoiOllaNegatiivinen() {
+    //varasto alkusaldolla
+    
+    public void varastonTilavuusEiVoiOllaNegatiivinen() { 
         varasto = new Varasto(-1, 0);
         assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
+     //varasto ilman alkusaldoa
     public void varastonTilavuusEiVoiOllaNegatiivinen2() {
         varasto = new Varasto(-1);
         assertEquals(0, varasto.getTilavuus(), vertailuTarkkuus);
