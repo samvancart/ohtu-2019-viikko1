@@ -53,4 +53,7 @@ jacocoTestReport {
                     exclude: ['main/**'])
         })
     }
+    build.doLast {
+      delete fileTree (dir: "${buildDir}/classes", include: "**/JiBX_bindings*.class")
+}
 }
