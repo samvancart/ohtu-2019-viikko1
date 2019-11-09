@@ -25,10 +25,7 @@ public class Varasto {
         } else {// virheellinen, nollataan
             this.tilavuus = 0.0; // => käyttökelvoton varasto
         }
-        this.alkuSaldo(alkuSaldo);
-    }
-
-    public void alkuSaldo(double alkuSaldo) {
+        // this.alkuSaldo(alkuSaldo);
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
         } else if (alkuSaldo <= tilavuus) {// mahtuu
@@ -37,6 +34,16 @@ public class Varasto {
             this.saldo = tilavuus; // täyteen ja ylimäärä hukkaan!
         }
     }
+
+    // public void alkuSaldo(double alkuSaldo) {
+    // if (alkuSaldo < 0.0) {
+    // this.saldo = 0.0;
+    // } else if (alkuSaldo <= tilavuus) {// mahtuu
+    // this.saldo = alkuSaldo;
+    // } else {
+    // this.saldo = tilavuus; // täyteen ja ylimäärä hukkaan!
+    // }
+    // }
 
     public void setAlkuTilavuus(double tilavuus) {
         if (tilavuus > 0.0) {

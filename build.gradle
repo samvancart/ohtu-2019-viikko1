@@ -47,10 +47,6 @@ jacocoTestReport {
         xml.enabled true
         html.enabled true
     }
-
-build.doLast {
-    delete fileTree (dir: "${buildDir}/classes", include: "**/JiBX_bindings*.class")
-}
     afterEvaluate {
         classDirectories = files(classDirectories.files.collect {
             fileTree(dir: it,
