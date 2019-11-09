@@ -28,7 +28,7 @@ public class Varasto {
         this.alkuSaldo(alkuSaldo);
     }
 
-    private void alkuSaldo(double alkuSaldo) {
+    public void alkuSaldo(double alkuSaldo) {
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
         } else if (alkuSaldo <= tilavuus) {// mahtuu
