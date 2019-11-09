@@ -38,14 +38,6 @@ public class Varasto {
         }
     }
 
-    public void setAlkuTilavuus(double tilavuus) {
-        if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
-        } else {// virheellinen, nollataan
-            this.tilavuus = 0.0; // => käyttökelvoton varasto
-        }
-    }
-
     // --- ottavat aksessorit eli getterit: ---
     public double getSaldo() {
         return saldo;
