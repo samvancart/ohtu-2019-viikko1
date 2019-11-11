@@ -3,5 +3,5 @@ build/
 .gradle/
 /.nb-gradle/
 .vscode/
-.classpath
-.settings/
+.classpath/
+/.settings/
